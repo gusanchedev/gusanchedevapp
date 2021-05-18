@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <script src="https://kit.fontawesome.com/32f374c92f.js" crossorigin="anonymous"></script>
     <title>Gustavo Sanchez - Fullstack Developer</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <nav>
+                <div class="hamburger-button">
+                    <div class="button-img"><i class="fas fa-bars"></i></div>
+                </div>
+                <ul class="nav-options">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://blog.gusanche.dev" target="_blank">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <h1 class="name">Gustavo Sanchez</h1>
+                <h2 class="title">Fullstack Developer</h2>
+            </div>
+        </header>
+        <main>
+            <div class="aboutme-container">
+                <div class="aboutme-photo"></div>
+                <div class="aboutme-content">
+                    <h2 id="about">About me</h2>
+                    <p>Hi!</p>
+                    <p>I'am Gustavo Sanchez, I'm electronic and telecomunications engineer
+                        with 22+ years of experience in telecom networks and cloud systems.
+                        I have worked as system engineer for companies like Getronics, Telmex and
+                        the last 13 years as account executive for <a href="http://www.microsoft.com">Microsoft</a> and <a href="http://www.genesys.com">Genesys</a>.<br>
+                        Since the beginning of pandemic I decided to start a new path as Fullstack Developer
+                        and now I want to make software that help others to achieve their goals. <br>
+                        My learning journey has included the following technologies for frontend, backend and tools: </p>
+                        <div class="tech-toolbox">
+                            <div class="tool"><i class="fab fa-html5"></i></div>
+                            <div class="tool"><i class="fab fa-css3-alt"></i></div>
+                            <div class="tool"><i class="fab fa-js"></i></div>
+                            <div class="tool"><i class="fab fa-node-js"></i></div>
+                            <div class="tool"><i class="fab fa-npm"></i></div>
+                            <div class="tool"><img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB"/></div>
+                            <div class="tool"><i class="fab fa-git-square"></i></div>
+                            <div class="tool"><img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png" alt="Visual Studio Code"/></div>
+                        </div>
+                        <p>I hope to inspire you with some of my projects and if you think I can help you or your
+                        organization, please contact me. <br>
+                        Welcome and thanks for being here! </p>
+                    
+                </div>
+            </div>
+            <div class="projects-container">
+                <h2 id="projects">Some projects built by me</h2>
+            </div>
+            <div class="contact">
+                <h2 id="contact">Let's talk</h2>
+                <form action="" method="post">
+                    <ul>
+                        <li><label for="contact-name">Name</label></li>
+                        <li><input type="text" name="contact-name" id="contact-name" required></li>
+                        <li><label for="contact-email">Email<label</li>
+                        <li><input type="email" name="contact-email" id="contact-email" required></li>
+                        <li><label for="contact-message">How can I help you?</label></li>
+                        <li><textarea type="text" name="contact-message" id="contact-message" rows="8" cols="30" required maxlength="250"></textarea></li>
+                        <li><input type="submit" value="Submit"></li>
+                    </ul>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p class="copy">&COPY; 2021</p>
+            <div class="social-networks">
+                <div class="social-icon"><a href="https://linkedin.com/in/gustavosanchezgdev" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                <div class="social-icon"><a href="https://github.com/gustavosanchezgalarza" target="_blank"><i class="fab fa-github"></i></a></div>
+                <div class="social-icon"><a href="https://twitter.com/gusanchedev" target="_blank"><i class="fab fa-twitter"></i></i></a></div>
+                <div class="social-icon"><a href="https://wa.me/573175182687" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
