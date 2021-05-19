@@ -59,7 +59,7 @@ main h2 {
   background-color: var(--color-3);
   color: var(--color-1);
   padding: 0.2rem 0.5rem;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 }
 .aboutme-content p {
   padding-left: 0.5rem;
@@ -76,6 +76,51 @@ main h2 {
 .tool img {
   width: 30px;
   height: 30px;
+}
+.project-card {
+  border: 0.05rem solid var(--color-2);
+  color: var(--color-2);
+  border-radius: 0.8rem;
+  background-color: white;
+  overflow: hidden;
+  margin: 1.rem;
+}
+.project-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+}
+.project-info {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+.project-tech-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-technology {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tech {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.project-urls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.project-urls a {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.project-urls a:link, a:visited, a:hover {
+  text-decoration: none;
 }
 .contact ul {
   list-style: none;
@@ -157,4 +202,10 @@ footer {
 }
 .fa-git-square {
   color: #f05033;
+}
+.fa-git-alt {
+  color: black;
+}
+.fa-play-circle {
+  color: var(--color-4);
 }
