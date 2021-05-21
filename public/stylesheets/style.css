@@ -49,7 +49,7 @@ header {
   right: 0;
 }
 .menu-item:hover {
-  color:var(--color-4);
+  color: var(--color-4);
 }
 .logo {
   background-color: var(--color-3);
