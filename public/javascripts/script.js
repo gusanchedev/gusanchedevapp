@@ -1,31 +1,37 @@
+function displayNavMenuOptions(e) {
+    if(e.matches) {
+      menuButton.classList.add("hidden");
+      menuItems.forEach( item => {
+        item.classList.remove("hidden");
+      });
+    }
+    else {
+      menuButton.classList.remove("hidden");
+      menuItems.forEach( item => {
+        item.classList.add("hidden");
+      });
+    }
+}
 const menuButton = document.querySelector(".hamburger-button");
-const menuOptions = document.querySelectorAll(".menu-item");
-const iconMenu = document.querySelector(".fas.fa-bars");
+const menuItems = document.querySelectorAll(".menu-item");
+const menuIcon = document.querySelector(".fas.fa-bars");
 const logo = document.querySelector(".logo");
-const mql =  window.matchMedia("(min-width:1025px)");
+const mediaQueryList =  window.matchMedia("(min-width:1025px)");
 
-menuButton.addEventListener("click", function (event) {
+if(mediaQueryList.matches) {
+  menuButton.classList.add("hidden");
+  menuItems.forEach( item => {
+    item.classList.remove("hidden");
+  });
+};
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("fa-bars");
+  menuIcon.classList.toggle("fa-times");
   logo.classList.toggle("hidden");
-  iconMenu.classList.toggle("fa-bars");
-  iconMenu.classList.toggle("fa-times");
-  menuOptions.forEach((option) => {
-    option.classList.toggle("hidden");
+  menuItems.forEach( item => {
+    item.classList.toggle("hidden");
   });
 });
 
 
-function displayNavMenuOptions(e) {
-  if (e.matches) {
-    menuOptions.forEach( option => {
-      option.classList.remove("hidden");
-    });
-    menuButton.classList.add("hidden");
-  } else {
-    menuOptions.forEach( option => {
-      option.classList.add("hidden");
-    });
-    menuButton.classList.remove("hidden");
-  }
-}
-
-mql.addEventListener('change', displayNavMenuOptions);
+mediaQueryList.addEventListener('change', displayNavMenuOptions);
