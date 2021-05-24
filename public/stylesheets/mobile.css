@@ -104,15 +104,14 @@ main h2 {
   height: 30px;
 }
 .projects-container {
-  padding: 0 2rem;
+  padding: 1rem;
   display: grid;
-  gap: 0.8rem;
+  gap: 1rem;
   grid-template-columns: 1fr;
 }
 .project-card {
-  border: 0.05rem solid var(--color-2);
   color: var(--color-2);
-  border-radius: 1rem;
+    box-shadow: 6px 3px 11px 4px rgb(0 0 0 / 20%);
   background-color: white;
   overflow: hidden;
 }
