@@ -1,0 +1,9 @@
+.nav-menu {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav-menu li {
+    margin-right: 1rem;
+  }
+
+  
