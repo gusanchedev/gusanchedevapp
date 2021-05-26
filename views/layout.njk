@@ -6,44 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheets/templates/mobilelayout.css">
-    <link
-      rel="stylesheet"
-      href="/stylesheets/templates/tabletlayout.css"
-      media="screen and (min-width: 480px) and (max-width:1024px)"
-    />
-    <link
-      rel="stylesheet"
-      href="/stylesheets/templates/desktoplayout.css"
-      media="screen and (min-width:1025px)"
-    />
+    <link rel="stylesheet" href="/stylesheets/mobile.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <script src="https://kit.fontawesome.com/32f374c92f.js" crossorigin="anonymous"></script>
-    <script src="/javascripts/script.js" defer></script>
-    <title>Gustavo Sanchez - Fullstack Developer</title>
+    <title>Gustavo Sanchez - {{ title }}</title>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo">
-                <div class="icon"><i class="fas fa-terminal"></i></div>
+                <div class="icon"><a href="/"><i class="fas fa-terminal"></i></a></div>
                 <div class="logo-text">
                     <h1 class="name">Gustavo Sanchez</h1>
                     <h2 class="title">Fullstack Developer</h2>
                 </div>
             </div>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a class="hamburger-button" href="/"><i class="fas fa-bars"></i></a></li>
-                    <li><a class="menu-item hidden" href="/#about">About</a></li>
-                    <li><a class="menu-item hidden" href="/#projects">Projects</a></li>
-                    <li><a class="menu-item hidden" href="https://blog.gusanche.dev" target="_blank">Blog</a></li>
-                    <li><a class="menu-item hidden" href="/#contact">Contact</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
         {% block content %}

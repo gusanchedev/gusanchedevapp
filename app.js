@@ -7,7 +7,8 @@ const logger = require('morgan');
 const nunjucks =  require('nunjucks');
 
 //express routes
-const messageRouter = require('./routes/message');
+const contactRouter = require('./routes/contact');
+const spotifyappRouter = require('./routes/spotifyapp');
 
 //express app
 const app = express();
@@ -26,7 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //route handlers
-app.use('/message', messageRouter);
+app.use('/contact', contactRouter);
+app.use('/spotifyapp', spotifyappRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
