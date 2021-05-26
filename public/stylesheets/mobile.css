@@ -22,6 +22,7 @@ body {
   margin: auto;
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 header {
   display: flex;
@@ -191,6 +192,11 @@ footer {
   color: var(--color-4);
   background-color: var(--color-3);
   padding: 1.2rem;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .social-networks {
   display: flex;
